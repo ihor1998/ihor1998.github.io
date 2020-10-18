@@ -14,7 +14,7 @@ for (i = 3;i <= ordinalNum; i++) {
     num2 = result;
 }
 
-alert(num2)
+alert(num2);
 
 
 
