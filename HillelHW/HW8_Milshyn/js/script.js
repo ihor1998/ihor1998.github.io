@@ -13,10 +13,10 @@ return result
 function createUser(firstName, lastName, age) {
     
     let obj = {
-        firstName: `${ firstName }` || null,
-        lastName: `${ lastName }` || null,
-        age: `${ age }` || null,
-    }   
+        firstName: firstName || null,
+        lastName: lastName || null,
+        age:  age || null,
+    }     
     
     return obj; 
 }
