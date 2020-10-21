@@ -13,15 +13,19 @@ return result
 function createUser(firstName, lastName, age) {
     
     let obj = {
-        a: firstName ,
-        b: lastName ,
-        c: age,
+        firstName: `${ firstName }`,
+        lastName: `${ lastName }`,
+        age: `${ age }`,
     }   
     
-    return obj.a + " " + obj.b + "," + obj.c; 
+    if (!firstName,
+        !lastName,
+        !age
+    ) return null;
+    
+    return obj; 
 }
 
-//alert(createUser(firstName, lastName, age));
 
 
 function acceptNum(number,lessNumber,moreNumber) {
