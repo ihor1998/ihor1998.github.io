@@ -13,15 +13,10 @@ return result
 function createUser(firstName, lastName, age) {
     
     let obj = {
-        firstName: `${ firstName }`,
-        lastName: `${ lastName }`,
-        age: `${ age }`,
+        firstName: `${ firstName }` && null,
+        lastName: `${ lastName }` && null,
+        age: `${ age }` && null,
     }   
-    
-    if (!firstName,
-        !lastName,
-        !age
-    ) return null;
     
     return obj; 
 }
