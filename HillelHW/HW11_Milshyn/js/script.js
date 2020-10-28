@@ -1,7 +1,7 @@
 "use strict";
 
 function getNumObject(obj) {
-    const obj = {
+    obj = {
         '0': "zero",
         '42': "answer",
         'greeting': "Hello",
