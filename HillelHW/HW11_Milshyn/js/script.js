@@ -8,5 +8,5 @@ function getNumObject(obj) {
         '3.14': "PI",
     }
 
- console.log(obj['0'], obj['42'], obj['3.14'])
+    console.log(obj['0'], obj['42'], obj['3.14'])
 }
