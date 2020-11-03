@@ -8,7 +8,7 @@ const obj = {
 };
 
 
-function getNumObject(obj) {
+function getNumKeys(obj) {
 
     for (let key in obj) {
        
