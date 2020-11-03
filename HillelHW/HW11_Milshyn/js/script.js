@@ -15,9 +15,7 @@ function getNumKey(obj) {
         if (!isNaN(key)) {
             console.log(obj[key]); 
         };
-    }
-
-    
+    };  
 }
 
 getNumKey(obj);
