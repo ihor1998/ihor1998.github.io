@@ -20,4 +20,4 @@ function getNumKeys(obj) {
     
 }
 
-getNumObject(obj);
+getNumKeys(obj);
