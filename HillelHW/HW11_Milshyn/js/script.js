@@ -15,7 +15,7 @@ function getNumObject(obj) {
         if (!isNaN(key)) {
             console.log(obj[key]); 
         };
-    }
+    };
 
     
 }
