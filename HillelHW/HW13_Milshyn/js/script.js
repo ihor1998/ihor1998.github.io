@@ -15,7 +15,7 @@ function User(firstName, lastName, age) {
     this.age = age;
    
     this.greet = function () {
-        alert(`Hi! ${this.firstName})`);
+        alert(`Hi! ${this.firstName} ${this.lastName})`);
     }
 }
 
