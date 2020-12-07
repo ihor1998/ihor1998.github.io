@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.section {
+  font-family: "Nerko One", cursive;
+  font-size: 35px;
+  line-height: 37px;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.section__inner {
+  padding: 30px;
+  background-color: #ff4500;
+  display: flex;
+  border-radius: 10px;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section__input-box {
+  margin-bottom: 25px;
+}
+
+.section__input-box form {
+  display: flex;
+}
+
+.section__input {
+  font-family: "Nerko One", cursive;
+  font-size: 35px;
+  line-height: 37px;
+  border: 2px dotted #000;
+  border-radius: 5px;
+  background-color: transparent;
+  color: #000;
+  outline: none;
+  margin-right: 10px;
+}
+
+.section__btn {
+  cursor: pointer;
+  padding: 5px 15px;
+  font-size: 35px;
+  background-color: transparent;
+  border: 2px dotted #000;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.section__btn:last-of-type {
+  margin-right: 0px;
+}
+
+/*.section__list {
+}*/
+
+.section__list-item {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+
+.section__list-item:last-child {
+  margin-bottom: 0px;
+}
+
+.section__list-item_bg {
+  background-color: #ff8c00;
+}
