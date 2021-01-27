@@ -24,7 +24,7 @@ class Rabbit extends Animal{
 
     eat(food) {
         if (!(food instanceof Vegetable)) {
-            throw new Error;
+            throw new Error('Rabbit only eat vegetable!');
         }
 
         super.eat(food);
@@ -44,7 +44,7 @@ class Snake extends Animal{
 
     eat(food) {
         if (!(food instanceof Rabbit)) {
-            throw new Error;
+            throw new Error('Snake only eat rabbit!');
         }
 
         super.eat(food);
@@ -64,7 +64,7 @@ class Human extends Animal{
 
     eat(food) {
         if (food instanceof Human) {
-            throw new Error;
+            throw new Error('Homo homini lupus est. But not literally');
         }
 
         super.eat(food);
