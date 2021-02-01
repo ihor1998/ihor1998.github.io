@@ -55,6 +55,7 @@ sendRequest('POST', 'https://async-demo.herokuapp.com/objects?prob=20', {
 }, (err, response) => {
         if (err) {
             console.error(err);
+            return;
         }
         
         const { id } = JSON.parse(response);
@@ -67,16 +68,16 @@ sendRequest('POST', 'https://async-demo.herokuapp.com/objects?prob=20', {
             }
         }, (err) => {
                 if (err) {
-                    console.error(err)
-                    return
+                    console.error(err);
+                    return;
                 }
                 sendRequest('DELETE', `https://async-demo.herokuapp.com/objects/${id}?prob=20`, {},
                     (err) => {
                         if (err) {
-                            console.error(err)
-                            return
+                            console.error(err);
+                            return;
                         } else {
-                            console.log('OK!')
+                            console.log('OK!');
                         }
                     }
                 )
