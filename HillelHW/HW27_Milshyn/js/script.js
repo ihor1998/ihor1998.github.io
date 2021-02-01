@@ -58,6 +58,7 @@ sendRequest('POST', 'https://async-demo.herokuapp.com/objects?prob=20', {
             return;
         }
         
+        console.log("User created!")
         const { id } = JSON.parse(response);
         const extention = { age: 33 }
         
@@ -71,13 +72,14 @@ sendRequest('POST', 'https://async-demo.herokuapp.com/objects?prob=20', {
                     console.error(err);
                     return;
                 }
+                console.log("User updated!")
                 sendRequest('DELETE', `https://async-demo.herokuapp.com/objects/${id}?prob=20`, {},
                     (err) => {
                         if (err) {
                             console.error(err);
                             return;
                         } else {
-                            console.log('OK!');
+                            console.log("User deleted!")
                         }
                     }
                 )
